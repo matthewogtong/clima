@@ -15,9 +15,9 @@ struct WeatherModel {
     let cityName: String
     let temperature: Double
     
-    func getConditionName(weatherId: Int) -> String {
+    var conditionName: String {
         
-        switch weatherId {
+        switch conditionId {
         case 200...232:
             return "cloud.bolt"
         case 300...321:
@@ -37,4 +37,5 @@ struct WeatherModel {
         }
         
     }
+
 }
