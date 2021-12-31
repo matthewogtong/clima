@@ -62,7 +62,9 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
     }
     
     func didFailWithError(error: Error) {
+        
         print(error)
+        
     }
 }
 
